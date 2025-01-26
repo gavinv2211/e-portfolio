@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Machine Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Model Selection and Evaluation</h1>
+						</div>
+					</div>
+
+				<!-- Activity 1 -->
+				<div id="activity">
+					<div class="inner">
+						<h2>Using the “model_Performance_Measurement.ipynb” file to observe the impact on AUC and R2.</h2>
+						<p>
+						The ROC curve is a graphical representation used to evaluate the performance of a classification model, 
+						showing the trade-off between True Positive rate and False Positive rate. It is an indication telling us 
+						how much the model is capable of distinguishing between classes (Narkhede, 2021). The higher the AUC, the 
+						better the model’s ability to distinguish between classes, a model close to 1 indicates excellent 
+						performance, when the model is around 0.5 the model is randomly guessing, meaning it cannot distinguish 
+						between the classes.
+						<br>
+						<br>
+						By changing random parameters on the provided notebook, the first graph indicates the model is able to predict 
+						classes very well, the second graph where the AUC is close to 0.5 shows the model is not able to predict and 
+						randomly guessing.
+						<br>
+						<br>
+						<img src="ml-images/unit11-run1roc.jpg" alt="Image 1" height= "300" width="500">
+						<br>
+						<br>
+						<img src="ml-images/unit11-run2roc.jpg" alt="Image 2" height= "300" width="500">
+						<br>
+						<br>
+						<b>R2 Score</b>
+						<br>
+						<br>
+						R2 is a statistical measure used in a regression model to determine the proportion of variance in the dependent
+						variable that can be explained by the independent variable (Taylor, 2024).
+						<br>
+						<br>
+						The closer the predicted labels are to the actual labels, the higher the R2 score. 
+						When all predicted values equal actual values R2 = 1.0	
+						<br>
+						<br>
+						<b>Run 1</b>
+						<br>
+						<img src="ml-images/unit11-run1r2.jpg" alt="Image 3" height= "200" width="500">
+						<br>
+						<br>
+						<b>Run 2</b>
+						<br>
+						<img src="ml-images/unit11-run2r2.jpg" alt="Image 4" height= "200" width="500">
+						<br>
+						<br>
+						<b>References</b>
+						<br>
+						<br>
+						Narkhede, S. (2021) Understanding AUC - roc curve, Medium. 
+						Available from: https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5 [Accessed: 15 January 2025]. 
+						<br>
+						<br>
+						Taylor, S. (2024) R-squared, Corporate Finance Institute. 
+						Available from: https://corporatefinanceinstitute.com/resources/data-science/r-squared/#:~:text=R%2DSquared%20(R%C2%B2%20or%20the,(the%20goodness%20of%20fit). [Accessed: 10 January 2025]. 
+					</div>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+	</body>
+</html>
