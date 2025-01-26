@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Machine Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<style>
+			.image-row {
+				display: flex;
+				justify-content: space-around;
+				align-items: flex-start;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Convolutional Neural Networks</h1>
+						</div>
+					</div>
+
+				<!-- Activity 1 -->
+				<div id="activity">
+					<div class="inner">
+						<h2>CNN Model Activity</h2>
+						<p>
+						<b>The Wall Article</b>
+						<br>
+						<br>
+						The article by Wall (2019) focuses on Facial Recognition technology which is increasingly being adopted by police 
+						and security forces globally to identify criminals and terrorists by scanning faces in crowds and matching them against 
+						databases of known individuals.
+						<br>
+						<br>
+						A research report by (Rainie et al., 2022) examines the thoughts and perspectives of Americans on 
+						the widespread use of facial recognition technology by law enforcement agencies. 
+						The study reveals that while a majority of the public believes this technology can assist in finding 
+						missing persons and solving crimes, many also express concerns about its potential misuse. 
+						Specifically, there is a belief that police may use facial recognition to track individuals' 
+						locations and disproportionately surveil Black and Hispanic communities.
+						<br>
+						<br>
+						If one has nothing to hide. Why is this a concern?
+						<br>
+						<br>
+						<b>Potential misuse or errors.</b> The assumption is that these surveillance systems are used only for 
+						   legitimate purposes. These systems are not perfect and may lead to wrongful identification or 
+						   reflect biases.
+						<br>
+						<br>
+						<b>Security Risks.</b> The cameras are part of interconnected systems. 
+						   Attacks on these networks could result in serious consequences, such as identity theft, 
+						   stalking or framing of innocent people.
+						<br>
+						<br>
+						<b>Loss of Privacy.</b> The loss of privacy can create a society where individuals constantly feel 
+						   monitored, leading to an uncomfortable feeling on freedom and expression.
+						<br>
+						<br>
+						<b>References</b>
+						<br>
+						<br>
+						Education Ecosystem (2018) Understanding K-means clustering in machine learning, Medium. 
+						Available from: https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1 [Accessed: 10 December 2024]. 
+						<br>
+						<br>
+						Wall, M. (2019) Biased and wrong? Facial Recognition Tech in the dock, BBC News. 
+						Available from: https://www.bbc.co.uk/news/business-48842750 [Accessed: 14 October 2023].
+						<br>
+						<br>
+						<b>The CNN model - Object Recognition</b>
+						<br>
+						<br>
+						The notebook uses the very popular CIFAR-10 dataset from Keras. 
+						The dataset consists of 60 000 color images containing 10 different object classes using a convolution 
+						neural network to classify the images. The dataset is split into 50 000 training images and 10 000 test 
+						images.
+						<br>
+						<br>
+						The network contains two convolutional layers, each with filter values of 32. Increasing the filter value 
+						on the second layer may increase accuracy. The model does not contain any regularization techniques such as 
+						dropout or data augmentation to prevent overfitting, by increasing the filter value on the second layer 
+						causes the number of parameters to increase, making the model prone to overfitting. 
+						<br>
+						<br>
+						The model is set to stop training after 25 epochs, early stopping with a patience value of 2 is also 
+						applied, when the run the notebook was executed, training stopped after 7 epochs with a test accuracy of 
+						71% and a validation accuracy of 63% on my machine. 
+						Increasing the filter value on the second convolutional layer gradually may increase accuracy and 
+						adding dropout between each of these layers will also reduce the risk of overfitting. 
+						<br>
+						<br>
+						<b>Testing the predictions by changing input values on imshow:</b>
+						<br>
+						<div class="image-row">
+							<img src="ml-images/unit9-ship.jpg" alt="Image 1" width="300">
+							<img src="ml-images/unit9-truck.jpg" alt="Image 2" width="300">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Machine Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Clustering</h1>
+						</div>
+					</div>
+
+				<!-- Activity 1 -->
+				<div id="activity">
+					<div class="inner">
+						<h2>Jaccard Coefficient</h2>
+						<p>
+							For this exercise we were tasked to calculate the Jaccard Coefficient. The first Table is the original table. The second table was used to convert positives and negatives to binary classification.
+							for the purposes of this exercise, values <b>A</b> & <b>N</b> are seen as negative.
+						<br>
+						<br>
+							The Jaccard Coefficient is a metric used to measure the similarity between sets (SetA and SetB).
+						<br>
+							<b>Jaccard Coefficient: </b> Intersect/(SetA + SetB - Intersect)
+
+						<br>
+						<br>
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Gender</th>
+									<th>Fever</th>
+									<th>Cough</th>
+									<th>Test-1</th>
+									<th>Test-2</th>
+									<th>Test-3</th>
+									<th>Test-4</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jack</td>
+									<td>M</td>
+									<td>Y</td>
+									<td>N</td>
+									<td>P</td>
+									<td>N</td>
+									<td>N</td>
+									<td>A</td>
+								</tr>
+								<tr>
+									<td>Mary</td>
+									<td>F</td>
+									<td>Y</td>
+									<td>N</td>
+									<td>P</td>
+									<td>A</td>
+									<td>P</td>
+									<td>N</td>
+								</tr>
+								<tr>
+									<td>Jim</td>
+									<td>M</td>
+									<td>Y</td>
+									<td>P</td>
+									<td>N</td>
+									<td>N</td>
+									<td>N</td>
+									<td>A</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<br>
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Fever</th>
+									<th>Cough</th>
+									<th>Test-1</th>
+									<th>Test-2</th>
+									<th>Test-3</th>
+									<th>Test-4</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Jack</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Mary</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+									<td>1</td>
+									<td>0</td>
+								</tr>
+								<tr>
+									<td>Jim</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+									<td>0</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>
+						<b>Jack and Mary:</b>
+						<br>
+						Intersect {Fever, Test-1} = 2
+						<br>
+						SetA (Jack) = {Fever, Test-1} = 2
+						<br>
+						SetB (Mary) = {Fever, Test-1, Test-3} = 3
+						<br>
+						Jaccard Coefficient = 2/(2+3-2) = 0.67
+						<br>
+						<br>
+						<b>Jack and Jim:</b>
+						<br>
+						Intersect {Fever} = 1
+						<br>
+						SetA (Jack) = {Fever, Test-1} = 2
+						<br>
+						SetB (Jim) = {Fever, Cough} = 3
+						<br>
+						Jaccard Coefficient = 1/(2+2-1) = 0.33
+						<br>
+						<br>
+						<b>Jim and Mary:</b>
+						<br>
+						Intersect {Fever} = 1
+						<br>
+						SetA (Jim) = {Fever, Cough} = 2
+						<br>
+						SetB (Mary) = {Fever, Test-1, Test-3} = 3
+						<br>
+						Jaccard Coefficient = 1/(2+3-1) = 0.25
+						</p>
+					</div>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

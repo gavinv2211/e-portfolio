@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Machine Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Introduction to Artificial Neural Networks</h1>
+						</div>
+					</div>
+
+				<!-- Activity 1 -->
+				<div id="activity">
+					<div class="inner">
+						<h2>Perceptron Activities</h2>
+						<p>
+						3 jupyter notebooks were provided demonstrating a simple perceptron, Perceptron AND Operator and a Multilayered perceptron using the Sigmoid Function 
+						<br>
+						<br>
+						<b>Simple Perceptron</b>
+						<br>
+						<br>
+						A simple perceptron is a very simple type of artificial neural network, used for binary classification 
+						and consists of a single layer of weights connecting inputs to a single output. 
+						<br>
+						<br>
+						Key components include:
+						<br>
+						<br>
+						<b>Inputs:</b> The features of the data (The notebook exercise uses Age and Years of work experience)
+						<br>
+						<b>Weights:</b> Parameter values that gets adjusted during training.
+						<br>
+						<b>Bias:</b> The Bias is a constant added to the weighted sum to shift the activation function. (The notebook does not make use of this constant).
+						<br>
+						<b>Activation Function:</b> Determines the output. If the sum function greater or equal to 1 then output = 1 else output = 0 (Aka Step function).
+						<br>
+						<br>
+						<b>The Sum Function:</b>
+						<br>
+						<br>
+						   \( z = \sum_{i=1}^{n} w_i \cdot x_i \)
+						<br>
+						<br>
+						As we increase the values of a weight in a perceptron, the output becomes more sensitive to changes in the corresponding input.
+						<br>
+						The step function output a binary value (0 or 1) small changes to \( x_i \) can cause larger changes in \(z\).
+						<br>
+						<br>
+						<b>Perceptron AND operator</b>
+						<br>
+						<br>
+						The AND operator takes two binary inputs and gives a single binary output. For the output to be 1,
+						both inputs needs to be 1 else it will return 0
+						<br>
+						<br>
+						<b>Multilayer perceptron</b>
+						<br>
+						<br>
+						The Multilayer perceptron is a supervised feed forward neural network consisting of at least one input layer, a hidden
+						layer and an output layer (Reddy, 2019). The hidden and output layer uses a nonlinear activation function. 
+						<br>
+						<br>
+						The Multilayer perceptron notebook uses sigmoid as the activation function and introduces us to the concept of a Multilayer
+						perceptron architecture. The Multilayer perceptron is a feed-forward neural-network which can handle the complexity of the XOR operator dataset.
+						The XOR (Exclusive OR) takes two binary inputs just like the AND operator, but for the output to return 1, the inputs 
+						needs to differ. One of the inputs needs to be 1 and the other 0 if both are 1 or 0, then it will return 0.
+						<br>
+						<br>
+						<b>References</b>
+						<br>
+						<br>
+						Reddy, V.N. (2019) Neural networks, Medium. Available from: https://medium.com/@vnohitha13/neural-networks-52bec25688eb [Accessed: 18 December 2024]. 
+					</div>
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
