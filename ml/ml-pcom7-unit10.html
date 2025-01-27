@@ -15,6 +15,7 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+							<br>
 							<h1>Training an Artificial Neural Network</h1>
 						</div>
 					</div>
@@ -25,116 +26,40 @@
 						<h2>Discussion 2 - Legal and Ethical views on ANN Applications</h2>
 						<p>
 						This discussion continues from the discussion in Unit 8 "The risks and benefits of the use of AI writers at different level, from administrative work to creative writing".
-						Providing a summary and responses from peers
+						Summary and peer resonses.
 						<br>
 						<br>
-						
+						While the use of AI writers does offer major benefits, they also carry notable risks. Martyna Antas points 
+						out an important concern regarding uncritical acceptance of AI-generated content which can lead to the 
+						spread of misinformation if users don't assess the information critically. 
+						The article by (Monteith et al., 2023) addresses the growing use of generative AI highlight both its 
+						benefits and risks. The spread of misinformation from generative AI is a key concern particularly in 
+						mental illnesses.
 						<br>
 						<br>
-
+						James Adams expanded by mentioning that organizations may need to adapt their training and development 
+						strategies due to technological advancements, also highlighting concerns that junior employees might miss 
+						out on traditional learning opportunities due to a reduction in roles, while senior employees must 
+						continuously update their skills to remain competitive. James referred to the article 
+						by (Boritz et al., 2023) which represents an alternative perspective - if technology is properly 
+						leveraged, it can enhance skills, experience and cognitive abilities rather than diminishing them.
 						<br>
 						<br>
-
-						<br>
-						<br>
-
-						<br>
-						<br>
-						<b>References</b>
-						<br>
-						<br>
-						Costello, D. (2024) How ai tools enhance creative writing, ServiceScape. Available from: 
-						https://www.servicescape.com/blog/how-ai-tools-enhance-creative-writing#:~:text=Moreover%2C%20AI%20can%20assist%20in,that%20ensures%20coherence%20and%20flow. 
-						[Accessed: 20 January 2025]. 
-						<br>
-						<br>
-						Dergaa, I., Saad HB., Genn, JM., Amamou, B., Aissa MB., Guelmami N., Fekih-Romdhane, F., Chamari, K. (2024) From tools to 
-						threats: A reflection on the impact of artificial-intelligence chatbots on Cognitive Health, Frontiers in Psychology, 15. 
-						doi:10.3389/fpsyg.2024.1259845. 
-						<br>
-						<br>
-						Hutson, M. (2021) Robo-writers: the rise and risks of language-generating AI, Nature  591: 22–25. 
-						DOI: https://doi.org/10.1038/D41586-021-00530-0.
-						<br>
-						<br>
-						<br>
-						<b>Gradient Cost Function</b>
-						<br>
-						<br>
-						The article by (Mayo, 2017), explains how neural networks learn by adjusting the weights of neuron 
-						connections to minimize the error between actual and predicted outputs. The process involves two key 
-						concepts: backpropagation and gradient descent.	
-						<br>
-						<br>
-						<b>Backpropagation:</b> A method used to train an artificial network by repeatedly adjusting the weights of the 
-						connections in a network through each iteration (epoch). Its aim is to reduce the difference between the 
-						models predicted output and actual output by adjusting the weights and biases in the network, often 
-						utilizing optimizing algorithms like gradient descent or stochastic gradient descent (GeeksforGeeks, 2024).   
-						<br>
-						<br>
-						<b>Gradient descent:</b> An optimization algorithm used to update the weights in order to minimize the 
-						cost function that measures the difference between actual and predicted outputs. 
-						<br>
-						<br>
-						Gradient descent in combination with backpropagation is used to train neural networks. 
-						Backpropagation uses the chain rule to calculate loss with respect to each parameter across all layers. 
-						These gradients are then utilized by gradient descent to iteratively update the parameters, adjusting them 
-						layer by layer to minimize the loss function.
+						In summary, generative AI has both advantages and disadvantages. It is crucial to recognize that 
+						generative AI is not perfect, as it can produce misinformation and potentially negatively impact our 
+						cognitive functions. However, when used correctly and with an awareness of its limitations, it can be 
+						beneficial too.
 						<br>
 						<br>
 						<b>References</b>
 						<br>
 						<br>
-						GeeksforGeeks (2024) Backpropagation in neural network, GeeksforGeeks. 
-						Available from: https://www.geeksforgeeks.org/backpropagation-in-neural-network/ [Accessed: 08 January 2025].
+						Boritz, J.E., Stratopoulos, T.C. (2023) AI and the accounting profession: Views from industry and academia, Journal of information systems, 37(3), pp. 1–9. 
+						Available from: https://doi.org/10.2308/isys-2023-054.
 						<br>
 						<br>
-						Moyo, M. (2017) Neural network foundations, explained: Updating weights with gradient descent & backpropagation, 
-						KDnuggets. Available from: https://www.kdnuggets.com/2017/10/neural-network-foundations-explained-gradient-descent.html [Accessed: 08 January 2025].
-						<br>
-						<br>
-						<br>
-						<b>Activity</b>
-						<br>
-						<br>
-						In the Gradient cost function activity we were given an activity to run a notebook and change the learning rate and iteration numbers. 
-						The goal is reach a low cost with least amount of iterations.
-						<br>
-						<br>
-						Run 1: Learning rate : <b>0.08</b>, iterations :<b>100</b>.
-						<br>
-						Minimum cost: 0.004
-						<br>
-						<br>
-						Run 2: Learning rate : <b>0.09</b>, iterations :<b>150</b>.
-						<br>
-						Minimum cost: 1.04 at iteration: 133, cost at iteration 149: 5.16
-						<br>
-						<br>
-						Run 3: Learning rate : <b>0.06</b>, iterations :<b>150</b>.
-						<br>
-						Minimum cost: 0.002
-						<br>
-						<br>
-						Learning rate 0.08 with 100 iterations provides the optimal results with least iterations. 
-						By decreasing the learning rate to 0.06 the minimum cost improved by just 0.02 but with an increase of 
-						50 iterations. Increasing the learning rate and iterations (step 2), causes the weigh updates to become 
-						too aggressive causing the model to overshoot the optimal solution. 
-						<br>
-						<br>
-						<img src="ml-images/unit8-run1a.jpg" alt="Image 1" height= "220" width="600">
-						<br>
-						<img src="ml-images/unit8-run1b.jpg" alt="Image 2" height= "100" width="500">
-						<br>
-						<br>
-						<img src="ml-images/unit8-run2a.jpg" alt="Image 3" height= "220" width="600">
-						<br>
-						<img src="ml-images/unit8-run2b.jpg" alt="Image 4" height= "160" width="500">
-						<br>
-						<br>
-						<img src="ml-images/unit8-run3a.jpg" alt="Image 1" height= "220" width="600">
-						<br>
-						<img src="ml-images/unit8-run3b.jpg" alt="Image 2" height= "100" width="500">
+						Monteith, S., Glenn, T., Geddes, J.R., Whybrow, P.C., Achtyes, E. and Bauer, M. (2023) ‘Artificial Intelligence and increasing 
+						misinformation’, The British Journal of Psychiatry, 224(2), pp. 33–35. Available from: doi:10.1192/bjp.2023.136. 
 					</div>
 				</div>
 			</div>
@@ -147,4 +72,4 @@
 			<script src="../assets/js/main.js"></script>
 
 	</body>
-</html>004
+</html>
